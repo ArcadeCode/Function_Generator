@@ -11,6 +11,12 @@ def get_function(xcubeCanBeNegative=False) :
     b = randint(-9,9)
     c = randint(-9,9)
 
+    # We must have x² and x != 0
+    if a == 0 :
+        a+=1
+    if b == 0 :
+        b+=1
+
     # For get '+' sign when the nb is positive for more read comprehension
     if a >= 0 :
         a = "+"+str(a)
@@ -18,12 +24,6 @@ def get_function(xcubeCanBeNegative=False) :
         b = "+"+str(b)
     if c >= 0 :
         c = "+"+str(c)
-
-    # We must have x² and x != 0
-    if a == 0 :
-        a+=1
-    if b == 0 :
-        b+=1
 
     if c == "+0" :
         result = f"{a}x² {b}x"
