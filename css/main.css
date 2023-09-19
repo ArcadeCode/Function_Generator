@@ -1,0 +1,15 @@
+:root {
+    --theme-color6 : beige;   
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--theme-color6);
+}
+
+footer {
+    background-color: var(--theme-color6);
+}

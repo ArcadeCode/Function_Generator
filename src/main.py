@@ -1,13 +1,9 @@
 from random import randint
 from string import ascii_lowercase
 
-def get_function(xcubeCanBeNegative=False) :
+def get_function() :
     # Nb generator
-    if xcubeCanBeNegative == False :
-        a = randint(1,9)
-    else :
-        a = randint(-9,9)
-
+    a = randint(-9,9)
     b = randint(-9,9)
     c = randint(-9,9)
 
@@ -33,10 +29,9 @@ def get_function(xcubeCanBeNegative=False) :
 
 # Const
 gen_nb = 26
-gen_x_negative = True # not x but x² : it allow to get negative x² !
 
 # Print result :
 print("Écrivez la forme canonique de : ")
 for i in range(gen_nb) :
-    print(ascii_lowercase[i]+") "+get_function(gen_x_negative))
+    print(ascii_lowercase[i]+"(x) = "+get_function())
     '''Print  letter) and the question like : a) x²+x+0'''

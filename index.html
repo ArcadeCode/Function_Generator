@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
     <!-- Pyscript Framework importing-->
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
@@ -11,12 +12,34 @@
 <body>
     <header>
         <h1>Générateur de fonction polynôme du second degré</h1>
-        <h3><a href="mailto:e.dervauxx@gmail.com">Made by Dervaux Esteban</a></h3>
-    </header>
+        <nav>
+          <button onclick="location.reload();">Générer à nouveau</button>
+        </nav>
+      </header>
     
-    <section>
+    <section class="output">
         <py-terminal></py-terminal>
         <py-script src="src/main.py"></py-script>
     </section>
+
+    <footer>
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2">Informations supplémentaires :</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="imgs/mail-icon.png" alt="mail logo" height="20" width="20"></td>
+                <td><a href="">Made by Dervaux Esteban</a></td>
+              </tr>
+              <tr>
+                <td><img src="imgs/github-mark-white.png" alt="github logo" height="20" width="20"></td>
+                <td><a href="">The repository</a></td>
+              </tr>
+            </tbody>
+          </table>
+    </footer>
 </body>
 </html>
